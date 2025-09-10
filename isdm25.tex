@@ -1,0 +1,64 @@
+\input header.tex
+\usepackage{arydshln}
+
+
+%----------------------------------------------------------------------------------------
+%       TITLE PAGE
+%----------------------------------------------------------------------------------------
+\title[ISDM'25, JISBD, Córdoba]{ISDM'25\\JISBD\\Córdoba\thanks{\url{https://github.com/dsevilla/isdm-jisbd25}}}
+
+\author{Pedro J. Clemente Martín\inst{1}, Diego Sevilla Ruiz\inst{2}}
+\institute[]{
+\begin{tabular}[h]{cc}
+\inst{1} ISIT  &  \inst{2} DITEC \\
+Escuela Politécnica &  Facultad de Informática \\
+Universidad de Extremadura &  Universidad de Murcia \\
+\href{mailto:pjclemente@unex.es}{\textit{pjclemente@unex.es}} &  \href{mailto:dsevilla@um.es}{\textit{dsevilla@um.es}}\\
+\end{tabular}}
+\date{Septiembre, 2025}
+
+\begin{document}
+
+\def\insertsectionnumber{\arabic{section}}
+\def\insertsubsectionnumber{\arabic{subsection}}
+
+\pgfdeclareimage[width=\paperwidth]{background}{img/slideMezquita169.jpg}
+%\usebackgroundtemplate{\tikz\node[inner sep=0,opacity=0.9]{\pgfuseimage{background}};}
+
+\usebackgroundtemplate{%
+  \begin{tikzpicture}[remember picture,overlay]
+    \node[inner sep=0,anchor=south west] at (current page.south west) {\pgfuseimage{background}};
+    \fill[black,opacity=0.7] (current page.south west) rectangle (current page.north east);
+  \end{tikzpicture}%
+}
+
+\definecolor{accent}{HTML}{1DA1F2} % azul claro; cambia el HEX
+
+% Section/structure color (affects TOC, navigation, etc.)
+\setbeamercolor{structure}{fg=accent}
+
+\setbeamerfont{title}{size=\Huge,series=\bfseries}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\section{Introducción y bienvenida al taller}
+
+
+\input sessionindex
+
+
+\end{document}
+
+%%% Local variables:
+%%% mode: LaTeX
+%%% TeX-master: "header.tex"
+%%% ispell-local-dictionary: "spanish"
+%%% fill-column: 75
+%%% TeX-parse-self: t
+%%% TeX-auto-save: t
+%%% End:
+%%% vim: expandtab shiftwidth=2 tabstop=2 ai spelllang=es_ES spell tw=80
+
+% LocalWords:  Extremadura
