@@ -48,6 +48,6 @@ jobs:
       uses: ncipollo/release-action@v1
       with:
         tag: isdm25-slides-latest
-        name: ISDM25 Slides (automated)
+        name: ISDM'25 Slides (automated)
         artifacts: ./artifacts/isdm25.pdf
         allowUpdates: true
